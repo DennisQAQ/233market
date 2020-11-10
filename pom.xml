@@ -5,15 +5,18 @@
 	<groupId>com.roc.market</groupId>
 	<artifactId>market</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>market</name>
 	<packaging>pom</packaging>
 	<description>聚合服务</description>
 
 	<modules>
+		<module>market-commons</module>
 		<module>market-coupon</module>
 		<module>market-member</module>
 		<module>market-order</module>
 		<module>market-product</module>
 		<module>market-ware</module>
+		<module>market-admin</module>
+		<module>renren-generator</module>
+		<module>market-commons</module>
 	</modules>
 </project>
