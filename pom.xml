@@ -18,5 +18,6 @@
 		<module>market-admin</module>
 		<module>renren-generator</module>
 		<module>market-commons</module>
+		<module>market-gateway</module>
 	</modules>
 </project>
