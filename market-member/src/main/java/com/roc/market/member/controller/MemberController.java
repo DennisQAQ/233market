@@ -31,6 +31,10 @@ import com.roc.market.commons.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    /**
+     * 测试feign
+     */
     @Autowired
     private CouponFeignService CouponFeignService;
     @RequestMapping("/coupons")

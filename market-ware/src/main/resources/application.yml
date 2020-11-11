@@ -1,19 +1,19 @@
-spring:
-  datasource:
-    username: root
-    password: root1234
-    url: jdbc:mysql://localhost:3306/market_wms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  application:
-    name: market-ware
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 129.146.45.75:8848
-mybatis-plus:
-  mapper-locations: classpath:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
-server:
-  port: 8081
+#spring:
+#  datasource:
+#    username: root
+#    password: root1234
+#    url: jdbc:mysql://localhost:3306/market_wms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  application:
+#    name: market-ware
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 129.146.45.75:8848
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#server:
+#  port: 8081
