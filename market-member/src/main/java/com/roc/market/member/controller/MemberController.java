@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.roc.market.member.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,6 +31,16 @@ import com.roc.market.commons.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+    @Autowired
+    private CouponFeignService CouponFeignService;
+    @RequestMapping("/coupons")
+    public R test(){
+        MemberEntity memberEntity=new MemberEntity();
+        memberEntity.setNickname("zhangsan");
+        R memberCoupons = CouponFeignService.memberCoupons();
+
+        return memberCoupons.put("member",memberEntity).put("coupons",memberCoupons.get("coupons"));
+    }
 
     /**
      * 列表
