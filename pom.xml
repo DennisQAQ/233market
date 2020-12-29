@@ -15,9 +15,7 @@
 		<module>market-order</module>
 		<module>market-product</module>
 		<module>market-ware</module>
-		<module>market-admin</module>
-		<module>renren-generator</module>
-		<module>market-commons</module>
 		<module>market-gateway</module>
+		<module>market-admin</module>
 	</modules>
 </project>
