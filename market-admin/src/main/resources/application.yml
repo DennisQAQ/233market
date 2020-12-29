@@ -7,7 +7,7 @@ server:
   port: 8080
   connection-timeout: 5000ms
   servlet:
-    context-path: /renren-fast
+    context-path: /admin
 
 spring:
   # 环境 dev|test|prod
@@ -37,15 +37,21 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.50.101:8848
+  application:
+    name: market-admin
+
 #  resources:
 #    add-mappings: false
-
 
 #mybatis
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: io.renren.modules.*.entity
+  typeAliasesPackage: com.roc.market.admin.modules.*.entity
   global-config:
     #数据库相关配置
     db-config:
